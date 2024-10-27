@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniture</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-general">
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__left">
+              <i class="icon hamburger fa-solid fa-bars"></i>
+
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M15.75 14.7188L11.5625 10.5312C12.4688 9.4375 12.9688 8.03125 12.9688 6.5C12.9688 2.9375 10.0312 0 6.46875 0C2.875 0 0 2.9375 0 6.5C0 10.0938 2.90625 13 6.46875 13C7.96875 13 9.375 12.5 10.5 11.5938L14.6875 15.7812C14.8438 15.9375 15.0312 16 15.25 16C15.4375 16 15.625 15.9375 15.75 15.7812C16.0625 15.5 16.0625 15.0312 15.75 14.7188ZM1.5 6.5C1.5 3.75 3.71875 1.5 6.5 1.5C9.25 1.5 11.5 3.75 11.5 6.5C11.5 9.28125 9.25 11.5 6.5 11.5C3.71875 11.5 1.5 9.28125 1.5 6.5Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M8 9C10.4853 9 12.5 6.98531 12.5 4.5C12.5 2.01469 10.4853 0 8 0C5.515 0 3.5 2.01469 3.5 4.5C3.5 6.98531 5.51562 9 8 9ZM8 1.5C9.65437 1.5 11 2.84563 11 4.5C11 6.15406 9.65437 7.5 8 7.5C6.34594 7.5 5 6.15406 5 4.5C5 2.84563 6.34687 1.5 8 1.5ZM10.9719 10H5C2.23875 10 0 12.2384 0 15C0 15.5522 0.447812 16 0.971875 16H15C15.5522 16 15.9719 15.5522 15.9719 15C16 12.2375 13.7625 10 10.9719 10ZM1.53562 14.5C1.77897 12.8059 3.24 11.5 5.00125 11.5H10.9731C12.7334 11.5 14.195 12.8059 14.4388 14.5H1.53562Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="navbar__logo">
+              <img
+                src="https://miniture.b-cdn.net/wp-content/themes/miniture/assets/images/logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="navbar__right">
+              <svg
+                class="icon heart"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="17"
+                viewBox="0 0 20 17"
+                fill="none"
+              >
+                <path
+                  d="M17.0924 8.3751L9.87501 15.8752L2.65757 8.3751C2.21617 7.91037 1.88057 7.35562 1.6738 6.74894C1.46702 6.14226 1.39398 5.49803 1.45968 4.86046C1.52538 4.22289 1.72827 3.60709 2.05441 3.05533C2.38056 2.50357 2.82224 2.02891 3.34913 1.66396C3.87602 1.299 4.47565 1.05238 5.10685 0.941028C5.73805 0.829676 6.38587 0.85623 7.00584 1.01887C7.62581 1.1815 8.20324 1.47637 8.6985 1.88322C9.19376 2.29008 9.59511 2.79928 9.87501 3.37588C10.1549 2.79928 10.5563 2.29008 11.0515 1.88322C11.5468 1.47637 12.1242 1.1815 12.7442 1.01887C13.3641 0.85623 14.012 0.829676 14.6432 0.941028C15.2744 1.05238 15.874 1.299 16.4009 1.66396C16.9278 2.02891 17.3695 2.50357 17.6956 3.05533C18.0217 3.60709 18.2246 4.22289 18.2903 4.86046C18.356 5.49803 18.283 6.14226 18.0762 6.74894C17.8694 7.35562 17.5338 7.91037 17.0924 8.3751Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <i class="icon cart fa-solid fa-bag-shopping">
+                <div class="cart-count">0</div>
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-general">
+        <div class="container">
+          <div class="navbar-links">
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Shop</li>
+              <li>Blog</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-general">
+        <div class="container">
+          <div class="recommend">
+            <div class="recommend__image">
+              <img
+                src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_hero.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="recommend__content">
+              <span>Rustic Elegance</span>
+              <h2>The Woodland Haven Collection</h2>
+              <p>
+                Naming a furniture collection can be a creative and important
+                part of branding and marketing. A collection name should reflect
+                the theme, style, or inspiration behind the furniture pieces
+              </p>
+              <div class="disc-btn"><button>Discovery now</button></div>
+            </div>
+          </div>
+
+          <div class="arrivals">
+            <h2>1500+ cozy new arrivals</h2>
+            <div class="swiper swiperArrivals">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/p02-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Paolo Black Wood Dining Chair</h3>
+                    <span>$139.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.novaworks.net/wp-content/uploads/2023/10/p03-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Ana Grey Dining Chair</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/p04-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Curved Back Dining Chair</h3>
+                    <span><span style="text-decoration: line-through;">$159.99</span> $129.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/p05-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Top-Grain Leather Dining Chair</h3>
+                    <span>$129.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/p06-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Camille Taupe Italian Dining Chair</h3>
+                    <span>$139.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/p07-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Pali Black Hardwood Dining Chair</h3>
+                    <span>$139.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next next-arrivals"></div>
+              <div class="swiper-button-prev prev-arrivals"></div>
+            </div>
+          </div>
+
+          <div class="categories">
+            <div class="swiper swiperCat">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_04.jpg"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="slide-cat__content">
+                    <h3>Table Lamps</h3>
+                    <div>16 items</div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_05.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-cat__content">
+                    <h3>Scented Candles</h3>
+                    <div>38 items</div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_06.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-cat__content">
+                    <h3>Filing Cabinets</h3>
+                    <div>48 items</div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_01.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-cat__content">
+                    <h3>Accent Chairs</h3>
+                    <div>24 items</div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_02.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-cat__content">
+                    <h3>Duvet Covers</h3>
+                    <div>32 items</div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-cat">
+                  <div class="img-box">
+                    <img
+                      src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m3_cat_03.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="slide-cat__content">
+                    <h3>Espresso Makers</h3>
+                    <div>48 items</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next next-cat"></div>
+              <div class="swiper-button-prev prev-cat"></div>
+            </div>
+          </div>
+
+          <div class="arrivals">
+            <h2>You are in Living Room</h2>
+            <div class="swiper swiperArrivals">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p06_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Axis 2-Seat Sofa</h3>
+                    <span>$239.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p05_2.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Medoc Swivel Chair</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p04_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Axis 2-Piece Sectional Sofa</h3>
+                    <span>$399.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p07_2.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Lounge Deep Chaise Lounge</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p08_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Polly Sand Brown Accent Chair</h3>
+                    <span>$439.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p01_2.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Muirfield Sculptural Metal Accent Chair</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next next-arrivals"></div>
+              <div class="swiper-button-prev prev-arrivals"></div>
+            </div>
+          </div>
+
+          <div class="view-more">
+            <button>View more products</button>
+          </div>
+
+          <div class="discount">
+            <div class="ds-paragraph">Sale up to 20% All items</div>
+            <h2>Worldly Wanderlust Treasures</h2>
+            <div class="timer">
+              <div class="timer__item">
+                <div class="value">33</div>
+                <div class="label">Days</div>
+              </div>
+              <div class="timer__item">
+                <div class="value">11</div>
+                <div class="label">Hours</div>
+              </div>
+              <div class="timer__item">
+                <div class="value">13</div>
+                <div class="label">Minutes</div>
+              </div>
+              <div class="timer__item">
+                <div class="value">18</div>
+                <div class="label">Seconds</div>
+              </div>
+            </div>
+            <div class="shop-btn">
+              <button>Shop the sale</button>
+            </div>
+          </div>
+
+          <div class="arrivals">
+            <h2>More can’t-miss fall deals</h2>
+            <div class="swiper swiperArrivals">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m2_p07_2.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Lounge Deep Chaise Lounge</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m6_p08_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Sherpa Light Brown Bear Kids Play Chair</h3>
+                    <span>$99.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m6_p04_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Seesaw Cream Boucle Power Recliner Chair</h3>
+                    <span>$249.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m6_p05_2.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Fawn Animal Kids Play Chair</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.b-cdn.net/wp-content/uploads/2023/10/m6_p01_1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Willy Round Kids Play Table by Leanne Ford</h3>
+                    <span>$299.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide-arrivals">
+                  <img
+                    src="https://miniture.novaworks.net/wp-content/uploads/2023/10/p01-1.jpeg"
+                    alt=""
+                  />
+                  <div class="slide-arrivals__content">
+                    <h3>Pali Black Hardwood Dining Chair</h3>
+                    <span>$139.99</span>
+                  </div>
+                  <div class="icons">
+                    <div class="icons__top">
+                      <div class="icon heart">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="icon zoom">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </div>
+                    <div class="icons__bottom">
+                      <div class="icon add">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next next-arrivals"></div>
+              <div class="swiper-button-prev prev-arrivals"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
