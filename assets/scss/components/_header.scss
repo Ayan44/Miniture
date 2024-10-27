@@ -1,0 +1,197 @@
+header {
+    background-color: #fff;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 53px;
+
+        &__left,
+        &__right {
+            display: flex;
+            gap: 12px;
+
+            :hover {
+                color: orange;
+                transition: 0.3s;
+            }
+
+            .icon {
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+
+        &__left {
+            .hamburger {
+                display: inline !important;
+            }
+        }
+
+        &__logo {
+            img {
+                height: 26px;
+                width: 80%;
+            }
+        }
+
+        &__right {
+            .heart {
+                display: none;
+            }
+
+            .cart {
+                position: relative;
+
+                .cart-count {
+                    position: absolute;
+                    top: -10px;
+                    left: 10px;
+                    background-color: orange;
+                    border-radius: 50%;
+                    padding: 2px;
+                    font-size: 0.5rem;
+                    width: 14px;
+                    height: 14px;
+                    text-align: center;
+                    color: white;
+                }
+            }
+        }
+
+    }
+
+    .navbar-links {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .navbar {
+            &__left {
+                .hamburger {
+                    display: none !important;
+                }
+            }
+
+            &__right {
+                .heart {
+                    display: inline;
+                }
+            }
+
+            &__left,
+            &__right {
+                gap: 24px;
+
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .cart {
+                    .cart-count {
+                        .cart-count {
+                            left: 16px;
+                            padding: 3px;
+                            font-size: 0.75rem;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+            &__logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width:992px) {
+    header {
+        .navbar {
+            &__left {
+                .hamburger {
+                    display: none !important;
+                }
+            }
+
+            &__right {
+                .heart {
+                    display: inline;
+                }
+            }
+
+            &__left,
+            &__right {
+                gap: 24px;
+
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .cart {
+                    .cart-count {
+                        .cart-count {
+                            left: 16px;
+                            padding: 3px;
+                            font-size: 0.75rem;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+
+            &__logo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+    header {
+        .navbar {
+            height: 80px;
+        }
+
+        .navbar-links {
+            display: flex;
+            justify-content: center;
+            height: 70px;
+            width: 60%;
+            margin: auto;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    list-style: none;
+                    padding: 0 20px;
+                    font-weight: 500;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #df8805;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
